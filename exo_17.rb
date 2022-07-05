@@ -8,11 +8,10 @@ until number <= 25 and number > 0
   number = gets.chomp.to_i
 end
 puts "Et voici ta pyramide:"
-number_1 = number
 number_2 = 1
 for i in 1..number
-  print " " * (number_1 - 1) 
+  print " " * (number - 1) 
   puts "#" * (number_2) 
-  number_1 = number_1 - 1
+  number = number - 1
   number_2 = number_2 + 2
 end

@@ -1,9 +1,6 @@
-puts "quelle est ton année de naissance ?"
+puts "quelle age as-tu ?"
 print "> "
-year = gets.chomp.to_i
-age = 0
-until year == 2023
-  puts "Il y a #{2022 - year} ans tu avais #{age} an(s)"
-  year = year + 1
-  age = age + 1
+age = gets.chomp.to_i
+for i in 0..age
+  puts "il y a #{age - i} ans, tu avais #{i} ans"
 end
